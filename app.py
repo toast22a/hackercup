@@ -33,15 +33,19 @@ class Question:
 with open('data/data.pkl', 'rb') as f:
     data = pickle.load(f)
 
-@app.route("/")
+@app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route("/level/1")
+@app.route('/level/1')
 def level_one():
     return render_template('level_one.html')
 
-@app.route("/question/<level>")
+@app.route('/level/2')
+def level_two():
+    return render_template('level_two.html')
+
+@app.route('/question/<level>')
 def get_question(level):
     try:
         level = int(level)
