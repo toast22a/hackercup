@@ -6,7 +6,7 @@
     <title>Working Name</title>
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
 
@@ -16,7 +16,7 @@
         <button v-on:click="sayLetter">Speaker symbol here</button>
       </div>
       <div>
-        <button v-for="choice in choices" v-on:click="verifyChoice(choice)">{{ choice }}</button>
+        <button class="btn btn-primary btn-lg buttonSpace" v-for="choice in choices" v-on:click="verifyChoice(choice)">{{ choice }}</button>
       </div>
     </div>
 
