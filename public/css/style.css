@@ -25,6 +25,7 @@ html,
 .buttonSpace{
    height = 80px;
    width = 80px;
+   margin-top: 6px;
    margin-right: 5px;
    border-radius: 12px;
 }
