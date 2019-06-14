@@ -7,6 +7,10 @@ app.get('/', (req, res)=>{
   res.render('index.ejs')
 })
 
+app.get('/level/1', (req, res)=>{
+  res.render('level_one.ejs')
+})
+
 app.listen(3000, ()=>{
   console.log('App listening at port 3000')
 })

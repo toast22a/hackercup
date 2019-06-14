@@ -6,15 +6,12 @@
     <title>Working Name</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/style.css">
-    
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="js/vue_index.js"></script>
   </head>
 
-  <body>
-    <div id="vue-app">
-      <div>Working Name</div>
-      <button>Button</button>
+  <body class="fullscreen">
+    <div id="vue-app" class="container">
+      <button id="start-classroom" class='start-button' type="button" v-on:click="startClassroom">Start Classroom</button>
+      <button id="start-exercise" class='start-button' type="button" disabled>Start Exercise</button>
     </div>
   </body>
 
