@@ -1,0 +1,19 @@
+<html>
+
+  <head>
+    <title>TTS Test</title>
+  </head>
+
+  <body>
+    <button id='speak'>Speak</button>
+    <script>
+      var msg = new SpeechSynthesisUtterance('Today is a brand new day and we will win 15000 Pesos')
+      
+      var button = document.getElementById('speak')
+      button.addEventListener('click', ()=>{
+        window.speechSynthesis.speak(msg)
+      })
+    </script>
+  </body>
+
+</html>
