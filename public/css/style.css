@@ -21,3 +21,10 @@ html,
 .title {
   font-size: 3rem;
 }
+
+.buttonSpace{
+   height = 80px;
+   width = 80px;
+   margin-right: 5px;
+   border-radius: 12px;
+}
