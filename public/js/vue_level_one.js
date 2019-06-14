@@ -3,6 +3,7 @@ var vueLevelOne = new Vue({
   data: {
     alphabet: [],
     letter: null,
+    utterance: null,
     choices: []
   },
   created: function() {
@@ -21,6 +22,7 @@ var vueLevelOne = new Vue({
         this.choices.push(newChoice)
       }
       this.shuffleArray(this.choices)
+      this.utterance = new SpeechSynthesisUtterance(this.letter)
     },
     shuffleArray: function(array) {
       for (var i = array.length - 1; i > 0; i--) {
@@ -28,6 +30,21 @@ var vueLevelOne = new Vue({
         var temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+      }
+    },
+    verifyChoice: function(choice) {
+      console.log(this.letter)
+      console.log(choice)
+      if (this.letter == choice) {
+        alert('Correct!')
+        window.location.href = '/level/1'
+      } else {
+        alert('Wrong!')
+      }
+    },
+    sayLetter: function() {
+      if (this.utterance !== null) {
+        window.speechSynthesis.speak(this.utterance)
       }
     }
   }

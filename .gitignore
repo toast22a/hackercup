@@ -191,3 +191,6 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# macOS Finder
+.DS_Store
