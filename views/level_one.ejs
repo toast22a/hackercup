@@ -12,8 +12,12 @@
 
   <body class="fullscreen">
     <div id="vue-app" class="container">
-      <div>{{ letter }}</div>
-      <button v-for="choice in choices">{{ choice }}</button>
+      <div>
+        <button v-on:click="sayLetter">Speaker symbol here</button>
+      </div>
+      <div>
+        <button v-for="choice in choices" v-on:click="verifyChoice(choice)">{{ choice }}</button>
+      </div>
     </div>
 
     <script src="/js/vue_level_one.js"></script>
