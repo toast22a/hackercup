@@ -23,7 +23,7 @@ class Question:
         self.prompt = prompt
         self.choices = choices
         self.answer = answer
-                        
+
     def __repr__(self):
         return "Level: {} | Prompt: {} | Choices: {} | Answer: {}".format(self.level,
             self.prompt,
@@ -44,6 +44,10 @@ def level_one():
 @app.route('/level/2')
 def level_two():
     return render_template('level_two.html')
+
+@app.route('/level/3')
+def level_three():
+    return render_template('level_three.html')
 
 @app.route('/question/<level>')
 def get_question(level):
