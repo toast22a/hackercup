@@ -7,7 +7,7 @@ var vueLevelOne = new Vue({
     choices: []
   },
   created: function() {
-    this.alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
+    this.alphabet = "abcdefghijklmnopqrstuvwxyz".split("")
     this.generateQuestion()
   },
   methods: {
@@ -33,13 +33,24 @@ var vueLevelOne = new Vue({
       }
     },
     verifyChoice: function(choice) {
-      console.log(this.letter)
-      console.log(choice)
+      var correctIcon = document.getElementById("correct-icon")
+      var wrongIcon = document.getElementById("wrong-icon")
+      correctIcon.style.display = "none"
+      wrongIcon.style.display = "none"
       if (this.letter == choice) {
-        alert('Correct!')
-        window.location.href = '/level/1'
+        var buttons = document.getElementsByTagName("button")
+        for (var i=0; i<buttons.length; i++) {
+          buttons[i].disabled = true
+        }
+        correctIcon.style.display = "block"
+        setTimeout(function() {
+          window.location.href = "/level/1"
+        }, 2000)
       } else {
-        alert('Wrong!')
+        wrongIcon.style.display = "block"
+        setTimeout(function() {
+          wrongIcon.style.display = "none"
+        }, 2000)
       }
     },
     sayLetter: function() {
