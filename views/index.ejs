@@ -11,9 +11,16 @@
 
   <body class="fullscreen">
     <div id="vue-app" class="container">
-      <button id="start-classroom" class='start-button' type="button" v-on:click="startClassroom">Start Classroom</button>
+      <button id="start-classroom" class='start-button' type="button">Start Classroom</button>
       <button id="start-exercise" class='start-button' type="button" disabled>Start Exercise</button>
     </div>
+
+    <script>
+      var startClassroom = document.getElementById('start-classroom')
+      startClassroom.addEventListener('click', ()=>{
+        window.location.href = '/level/1'
+      })
+    </script>
   </body>
 
 </html>
