@@ -1,0 +1,19 @@
+{
+  "name": "hackercup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toast22a/hackercup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toast22a/hackercup/issues"
+  },
+  "homepage": "https://github.com/toast22a/hackercup#readme"
+}
