@@ -1,1 +1,2 @@
-# hackercup
+# Literati
+An app
