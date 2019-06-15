@@ -12,9 +12,14 @@
 
   <body class="fullscreen" style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);">
     <div id="vue-app" class="container">
-      <button id="start-classroom" class='start-button right-padding25' type="button"><i class="fa fa-home fa-5x"></i></button>
-      <button id="start-exercise" class='start-button' type="button" disabled><i class="fa fa-book fa-5x"></i></button>
-
+      <div style="height: 20%;">
+        <h1 class="app-title">Literati</h1>
+      </div>
+      <div style="height: 60%; display: flex; justify-content: center;">
+        <button id="start-classroom" class='start-button right-padding25' type="button"><i class="fa fa-home fa-5x"></i></button>
+        <button id="start-exercise" class='start-button' type="button" disabled><i class="fa fa-book fa-5x"></i></button>
+      </div>
+      <div style="height: 20%;"></div>
     <script>
       var startClassroom = document.getElementById('start-classroom')
       startClassroom.addEventListener('click', ()=>{
