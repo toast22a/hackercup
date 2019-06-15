@@ -18,13 +18,18 @@
       <div id="wrong-icon" style="display:none"><i class="fa fa-times-circle fa-3x"></i></div>
       <div>{{ prompt }}</div>
       <div>{{ question }}</div>
+
       <form v-on:submit.prevent="verifyChoice">
         <fieldset id="guess-fieldset">
           <input type="text" name="guess" v-model="guess">
           <input type="submit" value="Submit">
         </fieldset>
       </form>
-      <button type="button" v-on:click="generateQuestion"><i class="fa fa-forward fa-3x"></i></button>
+      <div style="padding-bottom:40px"></div>
+      <div  style="padding-top:8px">
+        <button type="button" v-on:click="generateQuestion"><i class="fa fa-forward fa-5x"></i></button>
+      </div>
+
     </div>
 
     <script src="/js/vue_level_five.js"></script>

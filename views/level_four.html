@@ -22,10 +22,12 @@
       <div style="border-bottom: 1px solid; margin-top:10px">
         <button class="btn btn-primary btn-lg buttonSpace" v-for="chosenOne in chosen" v-on:click="unverifyChoice(chosenOne)">{{ chosenOne }}</button>
       </div>
-      <div>
+      <div style="padding-bottom:40px">
         <button class="btn btn-primary btn-lg buttonSpace" v-for="choice in choices" v-on:click="verifyChoice(choice)">{{ choice }}</button>
       </div>
-      <button type="button" v-on:click="generateQuestion">Skip</button>
+      <div  class="padding20">
+        <button type="button" v-on:click="generateQuestion"><i class="fa fa-forward fa-5x"></i></button>
+      </div>
     </div>
 
     <script src="/js/vue_level_four.js"></script>
