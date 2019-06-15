@@ -53,6 +53,10 @@ def level_three():
 def level_four():
     return render_template('level_four.html')
 
+@app.route('/level/5')
+def level_five():
+    return render_template('level_five.html')
+
 @app.route('/question/<level>')
 def get_question(level):
     try:
