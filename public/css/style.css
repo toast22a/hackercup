@@ -33,3 +33,7 @@ html,
 .margin-bottom{
   margin-top: 30px;
 }
+
+.right-padding50{
+  margin-right: 100px;
+}
